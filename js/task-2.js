@@ -1,28 +1,14 @@
 const calculateEngravingPrice = function(message, pricePerWord) {
-  // твой код
+  const result = message.split(' ').length * pricePerWord;
+  console.log(result);
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
-console.log(
   calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',
-    10,
-  ),
-); // 80
+    'Proin sociis natoque et magnis parturient montes mus', 10); // 80
 
-console.log(
   calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',
-    20,
-  ),
-); // 160
+    'Proin sociis natoque et magnis parturient montes mus', 20); // 160
 
-console.log(
-  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
-); // 240
+  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40); // 240
 
-console.log(
-  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
-); // 120
+  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20); // 120

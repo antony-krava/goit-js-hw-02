@@ -1,6 +1,15 @@
 const formatString = function(string) {
-  // твой код
-};
+    let str = '';
+
+    if (string.length > 40) {
+        str = string.substr(0,40);
+        str += '...';
+        }
+        else {str = string} 
+
+
+return(str);
+  };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
@@ -16,7 +25,5 @@ console.log(formatString('Curabitur ligula sapien.'));
 
 console.log(
   formatString(
-    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-  ),
-);
+    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.'));
 // вернется форматированная строка

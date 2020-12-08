@@ -1,14 +1,13 @@
 const checkForSpam = function(message) {
-  // твой код
+  const checkSpam = message.toLowerCase();
+  console.log(checkSpam.includes('sale') || checkSpam.includes('spam'));
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
-console.log(checkForSpam('Latest technology news')); // false
 
-console.log(checkForSpam('JavaScript weekly newsletter')); // false
+checkForSpam('Latest technology news'); // false
 
-console.log(checkForSpam('Get best sale offers now!')); // true
+checkForSpam('JavaScript weekly newsletter'); // false
 
-console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+checkForSpam('Get best sale offers now!'); // true
+
+checkForSpam('[SPAM] How to earn fast money?'); // true
